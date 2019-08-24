@@ -16,7 +16,7 @@ def quicksort_Imperative(lista):
         return left_part + [lista[i]] + right_part
 
 
-def quicksort_Funcional(lista):
+def quickS_Funct_V1(lista):
     """ Method in functional paradigm
     When 'lista' is a list"""
     if len(lista) < 2:
@@ -24,6 +24,18 @@ def quicksort_Funcional(lista):
     else:
         left_part = [i for i in lista[1:] if i <= lista[0]]
         right_part = [i for i in lista[1:] if i > lista[0]]
-        return quicksort_Funcional(left_part) + lista[:1] + quicksort_Funcional(right_part)
+        return  quickS_Funct_V1(left_part) + lista[:1] + quickS_Funct_V1(right_part)
 
-print(quicksort_Funcional([]))
+#_____________________________________________________________________________
+#____________________________________________________________________>
+
+def quickS_Funct_V2(lista):
+    """ Method quicksort in functional paradigm
+    without assignment.
+    When 'lista' is a list"""
+    if len(lista) < 2:
+        return lista
+    else:
+        return  quickS_Funct_V2([i for i in lista[1:] if i <= lista[0]]) + lista[:1] + quickS_Funct_V2([i for i in lista[1:] if i > lista[0]])
+
+print(quickS_Funct_V2([1,9,8,6,4,3,2,5,7,1,4]))
