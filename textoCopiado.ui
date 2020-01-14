@@ -23,10 +23,10 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>239</x>
       <y>20</y>
-      <width>720</width>
-      <height>71</height>
+      <width>521</width>
+      <height>201</height>
      </rect>
     </property>
     <property name="font">
@@ -50,6 +50,9 @@ color: rgb(206, 206, 206);
     <property name="tabChangesFocus">
      <bool>false</bool>
     </property>
+    <property name="lineWrapColumnOrWidth">
+     <number>1</number>
+    </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -58,13 +61,13 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_Quitar">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>110</y>
+      <x>250</x>
+      <y>230</y>
       <width>250</width>
-      <height>41</height>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -90,9 +93,9 @@ color: rgb(206, 206, 206);
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>340</y>
+      <y>449</y>
       <width>720</width>
-      <height>190</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -107,9 +110,9 @@ color: rgb(206, 206, 206);
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>180</y>
-      <width>391</width>
+      <x>320</x>
+      <y>370</y>
+      <width>400</width>
       <height>40</height>
      </rect>
     </property>
@@ -117,6 +120,34 @@ color: rgb(206, 206, 206);
      <string notr="true">background-color: rgb(72, 72, 72);
 color: rgb(206, 206, 206);
 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Insertar">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>370</y>
+      <width>160</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(72, 72, 72);
+border-color: rgb(85, 255, 255);
+color: rgb(206, 206, 206);
+</string>
+    </property>
+    <property name="text">
+     <string>Insertar Salto</string>
     </property>
    </widget>
   </widget>
